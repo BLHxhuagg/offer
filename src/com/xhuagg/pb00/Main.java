@@ -3,11 +3,18 @@ package com.xhuagg.pb00;
 public class Main {
 	
 	public static void main(String[] args) {
-		//这是一个注释
-		System.out.println("Hello world");
 		
-		//呵呵
-		System.out.println("Shit");
+		int n = 10;
+		
+		int count = 0;
+		while(n != 0) {
+			count++;
+			n = (n-1) & n;
+		}
+		
+		System.out.println(count);
+		
+		
 	}
 
 }
